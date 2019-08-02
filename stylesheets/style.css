@@ -54,9 +54,14 @@ nav {
 }
 
 .navMenu li a {
+  color: black;
   text-decoration: none;
   /* transition: background-color .5s; */
   padding: 5px;
+}
+
+.navMenu li:first-child {
+  font-weight: 1000;
 }
 
 a:hover {
@@ -336,11 +341,60 @@ input {
 
   }
 
+  .sectionThree > div {
+    display: flex;
+  }
+
+  .footerOne {
+    display: flex;
+  }
+
+  .footerOne > div {
+    margin: 10px;
+  }
+
+  .footOneContOne {
+    width: 40%
+  }
+
+  .footOneContTwo > ul > li {
+    line-height: 3em;
+  }
+
+  .footOneContThree {
+    width: 40%;
+  }
 }
 
 /* DESKTOP */
 @media (min-width: 1025px) {
+  nav {
+    height: 8vh;
+  }
+
+  hr {
+    display: none;
+  }
+  
   .menuButton {
     display: none;
+  }
+
+  .sectionOne img {
+    display: none;
+  }
+
+  .sectionOne {
+    background-image: url("../assets/image-1.jpg");
+    height: 85vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+  }
+
+  .secOneContent {
+    margin: auto;
+    opacity: 0.9;
+    width: 70%
   }
 }
