@@ -1,7 +1,10 @@
 * {
   font-family: 'Raleway', sans-serif;
-  /* border: 1px solid red; */
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
   line-height: 1.5;
+  box-sizing: border-box;
 }
 
 html {
@@ -9,62 +12,41 @@ html {
 }
 
 body {
-  margin: 0;
   overflow-x: hidden;
 }
 
-p {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-/* .readMore {
-  padding-bottom: 15px;
-  display: block;
-} */
-
-.internalHr {
-  width: 90%;
-  color: white;
-  margin: 20px;
-}
-
-/* NAVIGATION BAR */
+/* NAVIGATION
+BAR */
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 8vh;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 100;
   background-color: white;
-  /* height: 8vh; */
 }
 
 .navMenu {
-  list-style-type: none;
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  /* margin: 0; */
+  margin: 0;
   padding: 0;
+  list-style: none;
 }
 
-.navMenu li {
-  /* font-family: 'Noto Serif', serif; */
-  display: inline;
-  font-size: 2vh;
-}
-
-.navMenu li a {
-  color: black;
-  text-decoration: none;
+.navMenu a {
   padding: 5px;
+  text-decoration: none;
+  font-size: 2vh;
+  color: black;
 }
 
 .navMenu li:first-child {
-  font-weight: 1000;
+  font-weight: 900;
 }
 
 a:hover {
@@ -96,7 +78,9 @@ a:hover {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* SECTION ONE */
+/*
+SECTION ONE
+*/
 
 .sectionOne img {
   object-fit: cover;
@@ -124,7 +108,9 @@ main hr {
   margin-bottom: 20px;
 }
 
-/* SECTION TWO */
+/*
+SECTION TWO
+*/
 
 .sectionTwo {
   margin: 20px;
@@ -147,7 +133,6 @@ main hr {
   color: red;
   display: block;
   padding-bottom: 30px;
-  margin-bottom: 40px;
 }
 
 .secTwoContOne {
@@ -160,10 +145,12 @@ main hr {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  padding-bottom: 20px;
 }
 
 .secTwoContOne p {
   margin-bottom: 0;
+  padding: 0 20px;
 }
 
 .secTwoContTwo {
@@ -176,10 +163,12 @@ main hr {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  padding-bottom: 20px;
 }
 
 .secTwoContTwo p {
   margin-bottom: 0;
+  padding: 0 20px;
 }
 
 .secTwoContThree {
@@ -192,12 +181,12 @@ main hr {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  object-fit: cover;
+  padding-bottom: 20px;
 }
 
 .secTwoContThree p {
   margin-bottom: 50px;
-  padding-bottom: 20px;
+  padding: 0 20px;
 }
 
 .secTwoContFour {
@@ -210,14 +199,17 @@ main hr {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  object-fit: cover;
+  padding-bottom: 20px;
 }
 
 .secTwoContFour p {
   margin-bottom: 0;
+  padding: 0 20px;
 }
 
-/* SECTION THREE */
+/*
+SECTION THREE
+*/
 
 .sectionThree {
   padding: 20px;
@@ -244,9 +236,11 @@ main hr {
 }
 
 .sectionThree a {
+  display: block;
   font-size: 0.8em;
   text-align: center;
   color: red;
+  padding-bottom: 20px;
 }
 
 .sectionThree > div > div {
@@ -262,10 +256,12 @@ main hr {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  padding-bottom: 20px;
 }
 
 .secThreeContOne p {
   margin-bottom: 0;
+  padding: 0 20px;
 }
 
 .secThreeContTwo {
@@ -277,10 +273,12 @@ main hr {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  padding-bottom: 20px;
 }
 
 .secThreeContTwo p {
   margin-bottom: 0;
+  padding: 0 20px;
 }
 
 .secThreeContThree {
@@ -292,13 +290,17 @@ main hr {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  padding-bottom: 20px;
 }
 
 .secThreeContThree p {
   margin-bottom: 0;
+  padding: 0 20px;
 }
 
-/* FOOTER */
+/*
+FOOTER
+*/
 
 .footerOne {
   background-color: rgb(68, 68, 68);
@@ -306,6 +308,16 @@ main hr {
 }
 
 .footOneContOne {
+  color: white;
+  margin: 20px;
+}
+
+.footOneContOne p {
+  padding: 10px 0;
+}
+
+.internalHr {
+  width: 90%;
   color: white;
   margin: 20px;
 }
@@ -336,6 +348,11 @@ main hr {
   width: 90%;
 }
 
+.footOneContThree p {
+  padding: 10px 0;
+}
+
+
 input {
   width: 100%;
   font-size: 1em;
@@ -343,7 +360,7 @@ input {
   box-sizing: border-box;
 }
 
-.footOneContThree button {
+button {
   width: 100%;
   background-color: red;
   color: white;
@@ -369,16 +386,18 @@ input {
   padding: 2px;
 }
 
+/*
+MOBILE
+*/
 
-/* MOBILE */
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 499px) {
   nav {
     padding-right: 10px;
     padding-left: 10px;
   }
 
   .navMenu {
-    position: absolute;
+    position: fixed;
     right: 0;
     height: 92vh;
     top: 8vh;
@@ -390,7 +409,7 @@ input {
     transform: translateX(100%);
     background-color: white;
     margin: 0;
-    /* transition: transform 0.5s ease-in; */
+    transition: transform 0.5s ease-in;
   }
   
   .navActive {
@@ -409,22 +428,48 @@ input {
   .secTwoContThreeHide {
     display: none;
   }
-}
 
-@media (max-width: 600px) {
-  nav
-}
-
-/* TABLET */
-@media (min-width: 415px) and (max-width: 1024px) {
-  .menuButton {
+  .secThreeContThreeHide {
     display: none;
   }
+}
 
+/*
+TABLET
+*/
+
+@media (min-width: 500px) and (max-width: 853px) {
   nav {
     justify-content: space-around;
-    padding-right: 10px;
-    padding-left: 10px;
+  }
+
+  .navMenu {
+    position: fixed;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    background-color: white;
+    margin: 0;
+    transition: transform 0.5s ease-in;
+  }
+
+  .navActive {
+    transform: translateX(0);
+    transition: transform 0.5s ease-in;
+  }
+
+  .navMenu li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
   }
 
   .internalHr {
@@ -433,10 +478,6 @@ input {
 
   .sectionOne img {
     height: 50%;
-  }
-
-  .sectionTwo {
-    padding: 30px;
   }
 
   .sectionTwo > div{
@@ -451,27 +492,23 @@ input {
   }
 
   .secTwoContOne {
-    width: 40%;
+    width: 45%;
   }
 
   .secTwoContTwo {
-    width: 40%;
+    width: 45%;
   }
 
   .secTwoContThree {
-    width: 40%;
-  }
-
-  .secTwoContFour {
-    width: 40%;
+    width: 45%;
   }
 
   .secTwoContThreeHide {
     display: none;
   }
 
-  .sectionThree {
-    padding: 30px;
+  .secTwoContFour {
+    width: 45%;
   }
 
   .sectionThree > div {
@@ -479,21 +516,20 @@ input {
     justify-content: center;
   }
 
-  .sectionThree a {
-    display: block;
-    padding-bottom: 30px;
+  .secThreeContOne {
+    width: 45%;
   }
 
-  .secThreeContOne p{
-    padding: 0 20px;
+  .secThreeContTwo {
+    width: 45%;
+  }
+  
+  .secThreeContThree {
+    width: 45%;
   }
 
-  .secThreeContTwo p{
-    padding: 0 20px;
-  }
-
-  .secThreeContThree p{
-    padding: 0 20px;
+  .secThreeContThreeHide {
+    display: none;
   }
 
   .footerOne {
@@ -515,10 +551,21 @@ input {
   .footOneContThree {
     width: 40%;
   }
+
+  input {
+    padding: 10px;
+  }
+
+  button {
+    padding: 10px;
+  }
 }
 
-/* DESKTOP */
-@media (min-width: 1025px) {
+/*
+DESKTOP
+*/
+
+@media (min-width: 854px) {
   nav {
     height: 8vh;
     justify-content: space-around;
@@ -528,8 +575,8 @@ input {
     display: none;
   }
 
-  .menuButton {
-    display: none;
+  .innerH2 {
+    font-size: 1.2em;
   }
 
   .sectionOne img {
@@ -546,14 +593,14 @@ input {
 
   .secOneContent {
     margin: auto;
-    opacity: 0.9;
     width: 60%;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
   }
 
   .secOneContent h1 {
     font-size: 2.2em;
+    font-weight: bold;
   }
 
   .secOneContent h3 {
@@ -562,10 +609,11 @@ input {
 
   .secOneContent p {
     font-size: 1.2em;
+    margin-top: 20px;
   }
 
   .sectionTwo {
-    padding: 80px;
+    padding: 50px;
   }
 
   .sectionTwo > h2 {
@@ -578,12 +626,36 @@ input {
 
   .secTwoContOne {
     width: 33%;
-    /* margin: 5px; */
+    background-color: white;
+  }
+
+  .secTwoContOne img {
+    padding: 0;
+  }
+
+  .secTwoContOne h2 {
+    padding-top: 20px;
+  }
+
+  .secTwoContOne div {
+    background-color: rgb(246, 247, 249);
   }
 
   .secTwoContTwo {
     width: 33%;
-    /* margin: 5px; */
+    background-color: white;
+  }
+
+  .secTwoContTwo img {
+    padding: 0;
+  }
+
+  .secTwoContTwo h2 {
+    padding-top: 20px;
+  }
+
+  .secTwoContTwo div {
+    background-color: rgb(246, 247, 249);
   }
 
   .secTwoContThree {
@@ -593,45 +665,63 @@ input {
   .secTwoContThreeHide {
     width: 33%;
     margin: 10px;
-    position: relative;
     background-color: rgb(246, 247, 249);
   }
 
   .secTwoContThreeHide img {
-    width: 90%;
+    width: 100%;
     display: block;
     margin-right: auto;
     margin-left: auto;
+    padding-bottom: 20px;
   }
 
   .secTwoContThreeHide h2 {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+  }
+
+  .secTwoContThreeHide p {
+    margin-bottom: 20px;
+    padding: 0 20px;
   }
 
   .secTwoContFour {
     width: 60%;
-    margin-top: -25px;
+    margin-top: -30px;
   }
 
   .sectionThree {
-    padding: 80px;
+    margin: 20px;
+    padding: 50px;
   }
 
   .sectionThree > div {
     display: flex;
   }
 
-  .sectionThree a {
+  .secThreeContThreeHide {
+    margin: 10px;
+  }
+  
+  .secThreeContThreeHide img {
+    width: 100%;
     display: block;
-    padding-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .secThreeContThreeHide p {
+    margin-bottom: 0;
+    padding: 0 20px;
+  }
+
+  .secThreeContThree {
+    display: none;
   }
 
   .footerOne {
     display: flex;
-  }
-
-  .footerOne p {
-    padding: 0;
+    padding: 30px;
   }
 
   .footOneContOne {
@@ -659,17 +749,24 @@ input {
     margin-bottom: 10px;
   }
 
-  .footOneContThree > div {
+  .footOneContThree div {
     display: flex;
   }
 
-  .footOneContThree > div > input {
+  input {
     width: 65%;
+    padding: 10px;
   }
 
-  .footOneContThree > div > button {
+  button {
     width: 30%;
     margin-left: 10px;
+    padding: 10px;
+  }
+
+  .footerTwo {
+    padding-right: 70px;
+    padding-left: 60px;
   }
 
 }
